@@ -1,0 +1,28 @@
+{
+    "name": "1337m/lemming-random",
+    "description": "The rendom extension for Lemming the Discord bot.",
+    "keywords": ["discord", "php", "bot", "random"],
+    "type": "plugin",
+    "require": {
+        "php": ">=5.6",
+        "1337m/lemming": "^0.0.1"
+    },
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-4": {
+            "Lemming\\Random\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafał Proszowski",
+            "email": "paroxp@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "test": "vendor/bin/phpunit --bootstrap vendor/autoload.php tests"
+    }
+}
